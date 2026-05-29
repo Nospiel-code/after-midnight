@@ -1,24 +1,26 @@
 <!doctype html>
 <html lang="fr">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>After Midnight</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>After Midnight</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
 </head>
+
 <body>
 
   <!-- Fixed top bar -->
   <header class="top" id="top">
     <a href="#top" class="brand" aria-label="After Midnight — accueil">
-      <span class="dot"></span>
       <span class="mark">After Midnight</span>
-      <span class="meta">est. 2024</span>
     </a>
     <nav class="nav" aria-label="Sections">
       <a href="#video" data-target="video">Vidéo</a>
@@ -35,9 +37,10 @@
         <span class="line"></span>
         <span>Quartet · France · 2024 —</span>
       </div>
-      <h1>After<br/><em>Midnight</em></h1>
+      <h1>After<br /><em>Midnight</em></h1>
       <div class="hero-bottom">
-        <p class="hero-tag">Quatre silhouettes, une heure entre chien et loup. Pop nocturne, guitares brumeuses, voix au plus près du micro.</p>
+        <p class="hero-tag">Quatre silhouettes, une heure entre chien et loup. Pop nocturne, guitares brumeuses, voix au
+          plus près du micro.</p>
         <div class="scroll-cue">
           <span>Faire défiler</span>
           <span class="bar"></span>
@@ -75,7 +78,7 @@
     </div>
     <div class="bio-wrap">
       <aside class="bio-aside reveal">
-        <h2>Quatre voix,<br/><em>une seule heure.</em></h2>
+        <h2>Quatre voix,<br /><em>une seule heure.</em></h2>
         <div class="stats">
           <span class="k">Formation</span><span class="v">Quartet</span>
           <span class="k">Origine</span><span class="v">France</span>
@@ -84,10 +87,15 @@
         </div>
       </aside>
       <div class="bio-body reveal">
-        <p class="lede">[Texte bio à compléter — remplacer ce paragraphe d'intro par la présentation officielle du groupe que vous nous enverrez.]</p>
-        <p><span class="drop">A</span>fter Midnight, c'est cette heure exacte où la rue s'éteint, où les conversations se font à voix basse et où les chansons sortent presque toutes seules. Le groupe travaille un répertoire pop teinté de soul et d'envolées indie, écrit pour les fins de soirée plus que pour les heures de pointe.</p>
-        <p>Sur scène, le quartet joue serré : voix au plus près du micro, claviers feutrés, guitares brumeuses, batterie au balai. <em>Un set conçu comme une dernière conversation.</em></p>
-        <p>[Placeholder — détails sur les influences, les concerts récents, les sorties à venir. À remplacer avec le texte officiel.]</p>
+        <p class="lede">[Texte bio à compléter — remplacer ce paragraphe d'intro par la présentation officielle du
+          groupe que vous nous enverrez.]</p>
+        <p><span class="drop">A</span>fter Midnight, c'est cette heure exacte où la rue s'éteint, où les conversations
+          se font à voix basse et où les chansons sortent presque toutes seules. Le groupe travaille un répertoire pop
+          teinté de soul et d'envolées indie, écrit pour les fins de soirée plus que pour les heures de pointe.</p>
+        <p>Sur scène, le quartet joue serré : voix au plus près du micro, claviers feutrés, guitares brumeuses, batterie
+          au balai. <em>Un set conçu comme une dernière conversation.</em></p>
+        <p>[Placeholder — détails sur les influences, les concerts récents, les sorties à venir. À remplacer avec le
+          texte officiel.]</p>
       </div>
     </div>
   </section>
@@ -105,8 +113,9 @@
   <footer class="contact" id="contact" data-section>
     <div class="contact-wrap">
       <div class="contact-head">
-        <h2 class="reveal">Nous<br/><em>écrire.</em></h2>
-        <p class="intro reveal">Booking, presse, collaborations, sessions live — un mot suffit. On répond à toutes les enveloppes qui passent sous la porte.</p>
+        <h2 class="reveal">Nous<br /><em>écrire.</em></h2>
+        <p class="intro reveal">Booking, presse, collaborations, sessions live — un mot suffit. On répond à toutes les
+          enveloppes qui passent sous la porte.</p>
       </div>
 
       <div class="contact-grid">
@@ -144,102 +153,109 @@
     </div>
   </footer>
 
-<script>
-  /* ---------- fixed bar + active section ---------- */
-  const topBar = document.getElementById('top');
-  const navLinks = document.querySelectorAll('nav.nav a');
-  const sections = document.querySelectorAll('[data-section]');
+  <script>
+    /* ---------- fixed bar + active section ---------- */
+    const topBar = document.getElementById('top');
+    const navLinks = document.querySelectorAll('nav.nav a');
+    const sections = document.querySelectorAll('[data-section]');
 
-  window.addEventListener('scroll', () => {
-    topBar.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', () => {
+      topBar.classList.toggle('scrolled', window.scrollY > 40);
 
-    // hero parallax
-    const img = document.getElementById('heroImg');
-    if (img && window.scrollY < window.innerHeight) {
-      img.style.transform = `scale(1.06) translateY(${window.scrollY * 0.18}px)`;
-    }
-  }, { passive:true });
-
-  /* active section in nav */
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const id = e.target.id;
-        navLinks.forEach(a => a.classList.toggle('active', a.dataset.target === id));
+      // hero parallax
+      const img = document.getElementById('heroImg');
+      if (img && window.scrollY < window.innerHeight) {
+        img.style.transform = `scale(1.06) translateY(${window.scrollY * 0.18}px)`;
       }
-    });
-  }, { rootMargin: '-45% 0px -45% 0px' });
-  sections.forEach(s => io.observe(s));
+    }, { passive: true });
 
-  /* reveal on scroll */
-  const rio = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } });
-  }, { threshold: 0.18 });
-  document.querySelectorAll('.reveal').forEach(el => rio.observe(el));
+    /* active section in nav */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const id = e.target.id;
+          navLinks.forEach(a => a.classList.toggle('active', a.dataset.target === id));
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    sections.forEach(s => io.observe(s));
 
-  /* video play */
-  const thumb = document.getElementById('videoThumb');
-  function playVideo(){
-    const frame = thumb.parentElement;
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/xUhZK-bPhII?autoplay=1&rel=0&modestbranding=1';
-    iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
-    iframe.allowFullscreen = true;
-    frame.innerHTML = '';
-    frame.appendChild(iframe);
-  }
-  thumb.addEventListener('click', playVideo);
-  thumb.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playVideo(); }});
-</script>
+    /* reveal on scroll */
+    const rio = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } });
+    }, { threshold: 0.18 });
+    document.querySelectorAll('.reveal').forEach(el => rio.observe(el));
 
-<!-- ===== TWEAKS PANEL ===== -->
-<div id="tweaks-root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="tweaks-panel.jsx"></script>
-<script type="text/babel">
-  const AM_TWEAKS = /*EDITMODE-BEGIN*/{
-    "deepBlue": "#020a2e",
-    "font": "Manrope",
-    "background": "#050510",
-    "grain": true
-  }/*EDITMODE-END*/;
+    /* video play */
+    const thumb = document.getElementById('videoThumb');
+    function playVideo() {
+      const frame = thumb.parentElement;
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/xUhZK-bPhII?autoplay=1&rel=0&modestbranding=1';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      frame.innerHTML = '';
+      frame.appendChild(iframe);
+    }
+    thumb.addEventListener('click', playVideo);
+    thumb.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playVideo(); } });
+  </script>
 
-  function Tweaks(){
-    const [t, setTweak] = useTweaks(AM_TWEAKS);
+  <!-- ===== TWEAKS PANEL ===== -->
+  <div id="tweaks-root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+    integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+    integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+    integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+    crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel">
+    const AM_TWEAKS = /*EDITMODE-BEGIN*/{
+      "deepBlue": "#020a2e",
+      "font": "Manrope",
+      "background": "#050510",
+      "grain": true
+    }/*EDITMODE-END*/;
 
-    React.useEffect(() => {
-      const r = document.documentElement.style;
-      r.setProperty('--bg-2', t.deepBlue);
-      r.setProperty('--bg', t.background);
-      r.setProperty('--font', `'${t.font}', 'Helvetica Neue', Helvetica, Arial, sans-serif`);
-      document.body.style.setProperty('--_grain', t.grain ? '.55' : '0');
-      // grain toggle
-      const style = document.getElementById('grain-toggle') || (()=>{ const s=document.createElement('style'); s.id='grain-toggle'; document.head.appendChild(s); return s; })();
-      style.textContent = t.grain ? '' : 'body::before{ opacity:0 !important; }';
-    }, [t]);
+    function Tweaks() {
+      const [t, setTweak] = useTweaks(AM_TWEAKS);
 
-    return (
-      <TweaksPanel title="Tweaks · After Midnight">
-        <TweakSection title="Couleurs">
-          <TweakColor label="Bleu profond" value={t.deepBlue} onChange={v => setTweak('deepBlue', v)}
-            options={['#06164a','#0a1f6e','#020a2e','#1a2b6b']} />
-          <TweakColor label="Fond" value={t.background} onChange={v => setTweak('background', v)}
-            options={['#050510','#000000','#0a0a18','#06164a']} />
-        </TweakSection>
-        <TweakSection title="Typographie">
-          <TweakRadio label="Famille" value={t.font} onChange={v => setTweak('font', v)}
-            options={['DM Sans','Manrope','Space Grotesk']} />
-        </TweakSection>
-        <TweakSection title="Détails">
-          <TweakToggle label="Grain pellicule" value={t.grain} onChange={v => setTweak('grain', v)} />
-        </TweakSection>
-      </TweaksPanel>
-    );
-  }
-  ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<Tweaks />);
-</script>
+      React.useEffect(() => {
+        const r = document.documentElement.style;
+        r.setProperty('--bg-2', t.deepBlue);
+        r.setProperty('--bg', t.background);
+        r.setProperty('--font', `'${t.font}', 'Helvetica Neue', Helvetica, Arial, sans-serif`);
+        document.body.style.setProperty('--_grain', t.grain ? '.55' : '0');
+        // grain toggle
+        const style = document.getElementById('grain-toggle') || (() => { const s = document.createElement('style'); s.id = 'grain-toggle'; document.head.appendChild(s); return s; })();
+        style.textContent = t.grain ? '' : 'body::before{ opacity:0 !important; }';
+      }, [t]);
+
+      return (
+        <TweaksPanel title="Tweaks · After Midnight">
+          <TweakSection title="Couleurs">
+            <TweakColor label="Bleu profond" value={t.deepBlue} onChange={v => setTweak('deepBlue', v)}
+              options={['#06164a', '#0a1f6e', '#020a2e', '#1a2b6b']} />
+            <TweakColor label="Fond" value={t.background} onChange={v => setTweak('background', v)}
+              options={['#050510', '#000000', '#0a0a18', '#06164a']} />
+          </TweakSection>
+          <TweakSection title="Typographie">
+            <TweakRadio label="Famille" value={t.font} onChange={v => setTweak('font', v)}
+              options={['DM Sans', 'Manrope', 'Space Grotesk']} />
+          </TweakSection>
+          <TweakSection title="Détails">
+            <TweakToggle label="Grain pellicule" value={t.grain} onChange={v => setTweak('grain', v)} />
+          </TweakSection>
+        </TweaksPanel>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<Tweaks />);
+  </script>
 
 </body>
+
 </html>
